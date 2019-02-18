@@ -1,0 +1,9 @@
+apt-transport-https
+ca-certificates
+crda
+fake-hwclock
+hardlink
+raspberrypi-sys-mods
+systemd-sysv
+ssh
+sudo
