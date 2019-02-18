@@ -1,6 +1,6 @@
-# pi-gen
+# pi-gen-nano
 
-_Tool used to create the raspberrypi.org Raspbian images_
+_Tool used to create custom Raspbian "nano" images, based on the official raspberrypi.org pi-gen tool_
 
 
 ## Dependencies
