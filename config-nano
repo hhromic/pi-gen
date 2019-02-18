@@ -1,0 +1,4 @@
+PI_GEN="pi-gen-nano"
+PI_GEN_REPO="https://github.com/hhromic/pi-gen-nano"
+IMG_NAME="raspbian-stretch"
+STAGE_LIST="stage0-nano stage1-nano stage2-nano"
