@@ -15,7 +15,7 @@ install -m 644 extra_files/nolocale "${ROOTFS_DIR}"/etc/dpkg/dpkg.cfg.d/nolocale
 
 # Remove documentation and locales from already installed packages
 # Source: https://askubuntu.com/a/401144
-find "${ROOTFS_DIR}"/usr/share/doc -depth -type f ! -name copyright | xargs rm
-find "${ROOTFS_DIR}"/usr/share/doc -empty | xargs rmdir
+find "${ROOTFS_DIR}"/usr/share/doc ! -name copyright \( -type f -o -type l \) -delete
+find "${ROOTFS_DIR}"/usr/share/doc -empty -delete
 rm -rf "${ROOTFS_DIR}"/usr/share/{groff,info,linda,lintian,locale,man}/*
 rm -rf "${ROOTFS_DIR}"/var/cache/man/*
